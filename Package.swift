@@ -25,12 +25,12 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../../packages/auth"),
-    .package(path: "../../generated/google-cloud-common"),
+    .package(path: "../../generated/swift-google-cloud-common"),
     .package(path: "../../packages/gax"),
-    .package(path: "../../generated/google-cloud-location"),
+    .package(path: "../../generated/swift-google-cloud-location"),
     .package(path: "../../packages/wkt"),
-    .package(path: "../../generated/google-longrunning"),
-    .package(path: "../../generated/google-rpc"),
+    .package(path: "../../generated/swift-google-longrunning"),
+    .package(path: "../../generated/swift-google-rpc"),
     .package(url: "https://github.com/apple/swift-log", from: "1.12.0"),
   ],
   targets: [
@@ -38,12 +38,12 @@ let package = Package(
       name: "GoogleCloudFilestoreV1",
       dependencies: [
         .product(name: "GoogleCloudAuth", package: "auth"),
-        .product(name: "GoogleCloudCommon", package: "google-cloud-common"),
+        .product(name: "GoogleCloudCommon", package: "swift-google-cloud-common"),
         .product(name: "GoogleCloudGax", package: "gax"),
-        .product(name: "GoogleCloudLocation", package: "google-cloud-location"),
+        .product(name: "GoogleCloudLocation", package: "swift-google-cloud-location"),
         .product(name: "GoogleCloudWKT", package: "wkt"),
-        .product(name: "GoogleLongRunning", package: "google-longrunning"),
-        .product(name: "GoogleRpc", package: "google-rpc"),
+        .product(name: "GoogleLongRunning", package: "swift-google-longrunning"),
+        .product(name: "GoogleRpc", package: "swift-google-rpc"),
         .product(name: "Logging", package: "swift-log"),
       ],
     )
